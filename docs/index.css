@@ -39,6 +39,12 @@ a {
     text-align: right;
 }
 
+.con {
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 /* 커스텀 */
 /* 탑바 */
 .top-bar>div {
@@ -54,7 +60,7 @@ a {
 }
 
 .top-bar>div:first-child {
-    width: 486px;
+    width: 850px;
     padding: 16.5px;
 }
 
