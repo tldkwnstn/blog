@@ -45,7 +45,8 @@ a {
 }
 
 /* 커스텀 */
-/* 탑바 */
+
+/* 탑바 시작*/
 .con {
  width:1000px;
 }
@@ -138,3 +139,16 @@ a {
     left: auto;
     right: 100%;
 }
+/* 탑바 끝*/
+
+/* work-list-box 시작*/
+.work-list-box > ul > li {
+    width:25%;
+    
+}
+
+.work-list-box > ul > li > img {
+    width: 100%;
+    display: block;
+}
+/* work-list-box 끝*/
