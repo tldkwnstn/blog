@@ -39,40 +39,45 @@ a {
     text-align: right;
 }
 
-.con {
-    width: 1000px;
-    margin-left:auto;
-    margin-right:auto;
+.red {
+  background-color:red;
 }
-
 /* 커스텀 */
 /* 탑바 */
-.top-bar>div {
-    box-sizing: border-box;
+.top-bar {
     background-color: #ffcc00;
+}
+
+.top-bar__logo {
+  font-weight: bold;
+  font-size:1.3rem;
+}
+
+.top-bar > div > a {
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-.top-bar__logo {
-    font-weight: bold;
-    font-size: 1.3rem;
+.top-bar > div:first-child {
+    width: 200px;
+    padding: 20px;
 }
 
-.top-bar>div:first-child {
-    width: 850px;
-    padding: 16.5px;
+.top-bar > div:nth-child(2) {
+  width: calc(100% - 1000px);
 }
 
-.top-bar>div:last-child {
-    width: calc(100% - 486px);
+.top-bar > div:last-child {
+    width: 800px;
 }
 
-.top-bar>.menu-box-1 {
+/* 메뉴 */
+
+.menu-box-1 {
     text-align: right;
 }
 
-.top-bar>.menu-box-1 ul {
+.menu-box-1 ul {
     text-align: center;
 }
 
@@ -80,35 +85,35 @@ a {
     background-color: #ffcc00;
 }
 
-.top-bar>.menu-box-1>ul {
+.menu-box-1 > ul {
     display: inline-block;
 }
 
-.top-bar>.menu-box-1 ul>li {
+.menu-box-1 ul > li {
     position: relative;
 }
 
-.top-bar>.menu-box-1>ul>li {
+.menu-box-1 > ul > li {
     display: inline-block;
+}
+
+.menu-box-1 ul > li > a {
+    padding: 20px;
+    display: block;
     white-space: nowrap;
 }
 
-.top-bar>.menu-box-1 ul>li>a {
-    padding: 20px;
-    display: inline-block;
-}
-
-.top-bar>.menu-box-1 ul>li:hover>a {
+.top-bar > .menu-box-1 ul > li:hover > a {
     color: white;
     background-color: orange;
 }
 
-.menu-box-1 ul>li:hover>ul {
+.menu-box-1 ul > li:hover > ul {
     display: block;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
-.top-bar>.menu-box-1>ul ul {
+.top-bar > div > .menu-box-1 > ul ul {
     position: absolute;
     display: none;
     top: 100%;
@@ -116,12 +121,12 @@ a {
 }
 
 
-.top-bar>.menu-box-1>ul ul ul {
+.top-bar > .menu-box-1 > ul ul ul {
     left: 100%;
     top: 0;
 }
 
-.top-bar>.menu-box-1>ul>li:last-child>ul ul {
+.top-bar > .menu-box-1 > ul > li:last-child > ul ul {
     left: auto;
     right: 100%;
 }
